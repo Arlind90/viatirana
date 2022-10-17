@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Thu Sep 29 2022 13:21:50 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="viatirana.webflow.io" data-wf-page="628cb4b46824096914527881" data-wf-site="628cb4b46824097fb8527880" data-wf-status="1">
+    <head>
+        <meta charset="utf-8" />
+        <title>Via Tirana</title>
+        <meta content="We are an independent label and live promotions functioning between Brighton (UK) &amp; Tirana (AL)." name="description" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Webflow" name="generator" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            WebFont.load({ google: { families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Orbitron:regular,500,600,700,800,900"] } });
+        </script>
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+        <script type="text/javascript">
+            !(function (o, c) {
+                var n = c.documentElement,
+                    t = " w-mod-";
+                (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
+            })(window, document);
+        </script>
+        <link href="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c5638bc6fda1179765abe3_faviconVT.jpg" rel="shortcut icon" type="image/x-icon" />
+        <link href="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c5636c5b1ce322b011f3f4_iconVT.jpg" rel="apple-touch-icon" />
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KN6PHX7WB8"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-KN6PHX7WB8", { anonymize_ip: false });
+        </script>
+        <style>
+            ::selection {
+                background: #f7594a;
+                color: #1a171d;
+                text-shadow: none;
+            }
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+        </style>
+        <style>
+            .no-click {
+                pointer-events: none;
+            }
+            .red-bg {
+                background-color: red;
+            }
+        </style>
+        <style>
+            a.w-webflow-badge {
+                display: none !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c-songs w-embed">
+            <div id="song-list">
+                <div
+                    class="song-item current"
+                    data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c8106611a2de285dc8e011_To%20The%20Lake.jpg"
+                    data-song="https://influenco.al/wp-content/uploads/2022/07/Via-Tirana-To-The-Lake-EP-01-To-The-Lake.mp3"
+                >
+                    <h6>To The Lake</h6>
+                    <p>Via Tirana</p>
+                </div>
+                <div class="song-item" data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e0649f2223a56cf3dbfd8_tekila_cover.jpg" data-song="https://influenco.al/wp-content/uploads/2022/07/06-Tekila.mp3">
+                    <h6>Tekila</h6>
+                    <p>Via Tirana</p>
+                </div>
+                <div class="song-item" data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e3932395c1109c05de0e8_lediotelutem.jpg" data-song="https://influenco.al/wp-content/uploads/2022/07/02-Ledio-Te-Lutem.mp3">
+                    <h6>Ledio, Të Lutem!</h6>
+                    <p>Via Tirana</p>
+                </div>
+                <div class="song-item" data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e39fa752e42d180369b2f_thecity.jpg" data-song="https://influenco.al/wp-content/uploads/2022/07/01-The-City.mp3">
+                    <h6>The City</h6>
+                    <p>Via Tirana</p>
+                </div>
+                <div class="song-item" data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e0649f2223a56cf3dbfd8_tekila_cover.jpg" data-song="https://influenco.al/wp-content/uploads/2022/07/01-Ice-Cream.mp3">
+                    <h6>Ice Cream</h6>
+                    <p>Via Tirana</p>
+                </div>
+                <div class="song-item" data-img="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e3af71323ed12ac2feacc_ujepagaz.jpg" data-song="https://influenco.al/wp-content/uploads/2022/07/02-Tekila-Uj-Pa-Gaz-Remix.mp3">
+                    <h6>Tekila</h6>
+                    <p>Uj Pa Gaz Remix</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-embed">
+            <div class="w-embed">
+                <div class="audio-wrapper" id="player-container" href="javascript:;">
+                    <audio id="myAudio" ontimeupdate="initProgressBar()">
+                        <source src="https://influenco.al/wp-content/uploads/2022/07/Via-Tirana-To-The-Lake-EP-01-To-The-Lake.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+                <audio id="mouse-down">
+                    <source src="https://influenco.al/wp-content/uploads/2022/07/pressdown.m4a" type="audio/mpeg" />
+                </audio>
+                <audio id="mouse-up">
+                    <source src="https://influenco.al/wp-content/uploads/2022/07/pressup.m4a" type="audio/mpeg" />
+                </audio>
+            </div>
+        </div>
+        <div class="w-embed">
+            <div class="w-embed">
+                <style>
+                    .c-sticker:active {
+                        cursor: grabbing;
+                    }
+                    @media only screen and (min-width: 992px) {
+                        .is--song {
+                            writing-mode: vertical-rl;
+                            text-orientation: mixed;
+                        }
+                        .is--artist {
+                            writing-mode: vertical-rl;
+                            text-orientation: mixed;
+                        }
+                        .is--text {
+                            writing-mode: vertical-rl;
+                            text-orientation: mixed;
+                        }
+                    }
+                    @media only screen and (max-width: 991px) {
+                        .is--now-spin {
+                            writing-mode: vertical-rl;
+                            text-orientation: mixed;
+                        }
+                    }
+                    .c-hero_sticker {
+                        pointer-events: none;
+                    }
+                    .c-record {
+                        pointer-events: none;
+                    }
+                    .c-merch {
+                        pointer-events: none;
+                    }
+                    .c-form_heading {
+                        pointer-events: none;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="c-nav">
+            <a href="https://open.spotify.com/artist/6BpcWCnI1BQyqEmdOeEdMp" target="_blank" class="c-nav_logo w-inline-block">
+                <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c57d81db3b14fdb312a697_olimpiada_rec.svg" loading="lazy" alt="Olimpiada Records Logo" class="c-nav_logo-img" />
+            </a>
+            <div class="c-nav_info">
+                <div class="c-nav_song">
+                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c8106611a2de285dc8e011_To%20The%20Lake.jpg" loading="lazy" alt="" class="c-nav_art" />
+                    <div class="c-nav_title">
+                        <h6 class="is--song">To The Lake</h6>
+                        <p class="is--artist">Via Tirana</p>
+                    </div>
+                </div>
+                <div class="c-nav_time">
+                    <div class="c-nav_time-bar">
+                        <div class="html-embed w-embed">
+                            <div class="player-controls scrubber">
+                                <span id="seek-obj-container">
+                                    <progress id="seek-obj" value="0" max="1"></progress>
+                                </span>
+                            </div>
+                            <style>
+                                progress {
+                                    width: 100%;
+                                }
+                                progress[value] {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    background-color: white;
+                                    color: #0080de;
+                                    height: 0.5vw;
+                                    min-height: 8px;
+                                    border-radius: 100vw;
+                                }
+                                progress[value]::-webkit-progress-bar {
+                                    background-color: #e7e7e8;
+                                    border-radius: 100vw;
+                                    color: #0080de;
+                                }
+                                progress::-webkit-progress-value {
+                                    background-color: #0080de;
+                                    border-radius: 100vw;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="c-nav_time-text">
+                        <p id="start-time" class="is--text">0:00</p>
+                        <p class="is--text is--center">/</p>
+                        <p id="end-time" class="is--text">05:12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-nav_spinning">
+                <div class="is--now-spin">
+                    NOW<br />
+                    SPINNING
+                </div>
+            </div>
+        </div>
+        <div class="c-contain">
+            <div class="c-hero">
+                <div class="c-hero_left">
+                    <div class="c-control">
+                        <div class="c-volume">
+                            <div class="c-volume_control"></div>
+                            <div class="html-embed-2 w-embed">
+                                <input id="“volumeslider”" type="range" min="0" max="100" step="1" value="80" />
+                                <style>
+                                    input[type=range] {
+                                    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                                    width: 100%; /* Specific width is required for Firefox. */
+                                    background: transparent; /* Otherwise white in Chrome */
+                                    }
+                                    input[type=range]::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    }
+                                    input[type=range]:focus {
+                                    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                                    }
+                                    input[type=range]::-ms-track {
+                                    width: 100%;
+                                    cursor: pointer;
+                                    /* Hides the slider so custom styles can be added */
+                                    background: transparent;
+                                    border-color: transparent;
+                                    color: transparent;
+                                    }
+                                    input[type=range]::-webkit-slider-thumb {
+                                    background-color: background-color: rgba(201, 76, 76, 0.0) !important;
+                                    border-width: 0px !important;
+                                    background: transparent;
+                                    border-radius: 0px !important;
+                                    margin: 0 !important;
+                                    -webkit-appearance: none;
+                                    height: 10vw;
+                                    width: 3vw;
+                                    cursor: pointer;
+                                    background-image: url("https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f5e1e24e2c28666202b7c_volume-tall.svg");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    }
+                                    /* All the same stuff for Firefox */
+                                    input[type=range]::-moz-range-thumb {
+                                    background-color: background-color: rgba(201, 76, 76, 0.0) !important;
+                                    background: transparent;
+                                    border-width: 0px !important;
+                                    border-radius: 0px !important;
+                                    margin: 0px !important;
+                                    height: 10vw;
+                                    width: 3vw;
+                                    cursor: pointer;
+                                    background-image: url("https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f5e1e24e2c28666202b7c_volume-tall.svg");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    }
+                                    /* All the same stuff for IE */
+                                    input[type=range]::-ms-thumb {
+                                    margin: 0 !important;
+                                    background-color: background-color: rgba(201, 76, 76, 0.0) !important;
+                                    border-width: 0px !important;
+                                    border-radius: 0px !important;
+                                    background: transparent;
+                                    height: 10vw;
+                                    width: 3vw;
+                                    cursor: pointer;
+                                    background-image: url("https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f5e1e24e2c28666202b7c_volume-tall.svg");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    }
+                                    @media screen and (max-width: 479px) {
+                                    input[type=range]::-webkit-slider-thumb {
+                                    height: 30vw;
+                                    width: 9vw;
+                                    }
+                                    /* All the same stuff for Firefox */
+                                    input[type=range]::-moz-range-thumb {
+                                    height: 30vw;
+                                    width: 9vw;
+                                    }
+                                    /* All the same stuff for IE */
+                                    input[type=range]::-ms-thumb {
+                                    height: 30vw;
+                                    width: 9vw;
+                                    }
+                                    }
+                                    input[type=range]::-moz-focus-outer {
+                                    border: 0;
+                                    }
+                                </style>
+                            </div>
+                            <div class="c-volume_bar">
+                                <div class="c-volume_bar-line"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f5f67a287d7b37428de1e_volume-lines.svg" loading="lazy" alt="" class="c-bar_line-img" /></div>
+                            </div>
+                            <div class="c-volume_drag"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f60e8b7510587269c11c0_volume-control.svg" loading="lazy" alt="" class="c-volume_drag-img" /></div>
+                            <p class="c-button_text is--last">VOLUME</p>
+                        </div>
+                        <div class="c-controls no-click">
+                            <div class="c-button_contain">
+                                <a id="shuffle" href="#" class="c-button _w-inline-block w-inline-block">
+                                    <div class="c-button_circle">
+                                        <div class="c-button_img">
+                                            <div
+                                                class="c-button_icon"
+                                                data-w-id="8928777e-0a88-f289-daaf-c8a8ca76519a"
+                                                data-animation-type="lottie"
+                                                data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f68853726888d90ef27d7_shuffle.json"
+                                                data-loop="0"
+                                                data-direction="1"
+                                                data-autoplay="1"
+                                                data-is-ix2-target="0"
+                                                data-renderer="svg"
+                                                data-default-duration="1.0010009602293968"
+                                                data-duration="0"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="c-button_text">SHUFFLE</p>
+                            </div>
+                            <div class="c-button_contain">
+                                <a id="next" href="#" class="c-button _w-inline-block w-inline-block">
+                                    <div class="c-button_circle">
+                                        <div class="c-button_img is--yellow">
+                                            <div
+                                                class="c-button_icon"
+                                                data-w-id="6e4d45dd-a8e3-ccca-4f93-998da34140a4"
+                                                data-animation-type="lottie"
+                                                data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f6aba7f6b6e6b2188a8c0_next.json"
+                                                data-loop="0"
+                                                data-direction="1"
+                                                data-autoplay="1"
+                                                data-is-ix2-target="0"
+                                                data-renderer="svg"
+                                                data-default-duration="1.0010009602293968"
+                                                data-duration="0"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="c-button_text">NEXT</p>
+                            </div>
+                            <div class="c-button_contain">
+                                <a id="prev" href="#" class="c-button _w-inline-block w-inline-block">
+                                    <div class="c-button_circle">
+                                        <div class="c-button_img is--blue">
+                                            <div
+                                                class="c-button_icon"
+                                                data-w-id="c4af3cbc-bfc9-2e2e-370c-60bd02e51045"
+                                                data-animation-type="lottie"
+                                                data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f6b35354d7584b3a36c68_prev.json"
+                                                data-loop="0"
+                                                data-direction="1"
+                                                data-autoplay="1"
+                                                data-is-ix2-target="0"
+                                                data-renderer="svg"
+                                                data-default-duration="1.0010009602293968"
+                                                data-duration="0"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <p class="c-button_text">PREV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-welcome">
+                        <img
+                            src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f577da33b07f897ea2aa1_BestPlacesLogo2019.png"
+                            loading="lazy"
+                            srcset="
+                                https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f577da33b07f897ea2aa1_BestPlacesLogo2019-p-500.png 500w,
+                                https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f577da33b07f897ea2aa1_BestPlacesLogo2019-p-800.png 800w,
+                                https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f577da33b07f897ea2aa1_BestPlacesLogo2019.png       900w
+                            "
+                            sizes="100vw"
+                            alt=""
+                            class="c-hero_sticker"
+                        />
+                        <div
+                            data-w-id="b63b561b-f1de-5359-2f0f-9f16e3244081"
+                            style="
+                                opacity: 0;
+                                -webkit-transform: translate3d(0, 177px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -moz-transform: translate3d(0, 177px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -ms-transform: translate3d(0, 177px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                transform: translate3d(0, 177px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            "
+                            class="c-overflow-hidden"
+                        >
+                            <h1>
+                                Yo! We&#x27;re<br />
+                                <span class="is--red">Via Tirana<br /></span>‍<span>Let&#x27;s jam together</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-hero_right">
+                    <a data-w-id="39ebee5d-e361-453d-1256-31db3b119d49" href="https://open.spotify.com/artist/6BpcWCnI1BQyqEmdOeEdMp" target="_blank" class="c-work is--hero w-inline-block">
+                        <div class="c-work_bg"></div>
+                        <div
+                            style="
+                                -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            "
+                            class="c-work_button"
+                        >
+                            <p class="paragraph">VT TOP TRACKS</p>
+                        </div>
+                    </a>
+                    <div style="display: block;" class="c-power_lottie">
+                        <div
+                            data-w-id="9b3fd22f-04fd-b960-9cff-93fe705287b3"
+                            data-animation-type="lottie"
+                            data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f760010286289b5ec8a32_moving-arrow.json"
+                            data-loop="1"
+                            data-direction="1"
+                            data-autoplay="1"
+                            data-is-ix2-target="0"
+                            data-renderer="svg"
+                            data-default-duration="3.8"
+                            data-duration="0"
+                        ></div>
+                    </div>
+                    <div data-w-id="957b1f7a-3022-fcab-af76-bfb1848ae625" class="c-power">
+                        <a id="play-btn" href="#" class="_w-inline-block w-inline-block">
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f785737268807b9efb82d_power2.svg" loading="lazy" alt="" class="c-power_img" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f9457d82643b8f850a6ed_power1.svg" loading="lazy" style="display: none;" alt="Via Tirana webite" class="c-power_img is--2" />
+                        </a>
+                    </div>
+                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f7a73c2275a228afdbc96_switch.svg" loading="lazy" alt="" class="c-switch" />
+                    <img
+                        src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c57d6f175ba788f31db339_record_img.svg"
+                        loading="lazy"
+                        style="
+                            -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-180deg) skew(0, 0);
+                            -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-180deg) skew(0, 0);
+                            -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-180deg) skew(0, 0);
+                            transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-180deg) skew(0, 0);
+                        "
+                        data-w-id="32c28d33-cc9a-6ab8-3802-68b51a9b5593"
+                        alt=""
+                        class="c-record"
+                    />
+                    <img
+                        src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f7b4b9d5856b379692405_hand.svg"
+                        loading="eager"
+                        style="
+                            -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(36deg) skew(0, 0);
+                            -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(36deg) skew(0, 0);
+                            -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(36deg) skew(0, 0);
+                            transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(36deg) skew(0, 0);
+                        "
+                        alt=""
+                        class="c-hand"
+                    />
+                    <div class="c-slide-box">
+                        <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f7fa0a287d771f52a2895_bottom.svg" loading="lazy" alt="" class="c-slide_bottom" />
+                        <img
+                            src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f800967fe77f6f362b517_line.svg"
+                            loading="lazy"
+                            style="
+                                -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-26deg) skew(0, 0);
+                                -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-26deg) skew(0, 0);
+                                -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-26deg) skew(0, 0);
+                                transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-26deg) skew(0, 0);
+                            "
+                            alt=""
+                            class="c-slide_middle"
+                        />
+                        <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628f805b2c96817adbbc4a7d_top.svg" loading="lazy" alt="" class="c-slide_top" />
+                    </div>
+                </div>
+            </div>
+            <div class="c-bottom_bg">
+                <div class="c-form">
+                    <div class="c-form_heading">
+                        <h2>DOWNLOAD OUR ASSETS</h2>
+                        <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62961c613ab2206a1f88c1e2_arrow.svg" loading="lazy" alt="" class="c-form_arrow" />
+                    </div>
+                    <div class="c-form_block">
+                        <div class="form__wrap">
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c57d8d5d35df5abb29f26c_Via_Tirana_color.svg" loading="lazy" alt="" class="form__photo" />
+                            <h2 class="is--form-heading">Download our brand assets.</h2>
+                        </div>
+                        <a data-w-id="9e2c85bf-d699-a04a-c5cc-6df8a9654084" href="https://open.spotify.com/artist/6BpcWCnI1BQyqEmdOeEdMp" target="_blank" class="c-work w-inline-block">
+                            <div class="c-work_bg"></div>
+                            <div
+                                style="
+                                    -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                    -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                    -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                    transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                "
+                                class="c-work_button"
+                            >
+                                <p class="paragraph">DOWNLOAD NOW</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="c-footer_top">
+                    <div class="c-merch"></div>
+                    <div class="c-stickers">
+                        <div class="c-stickers_contain">
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c57d81db3b14fdb312a697_olimpiada_rec.svg" loading="lazy" alt="Olimpiada Records Logo" class="c-sticker" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c57d8d5d35df5abb29f26c_Via_Tirana_color.svg" loading="lazy" alt="" class="c-sticker is--2" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e0649f2223a56cf3dbfd8_tekila_cover.jpg" loading="lazy" alt="" class="c-sticker is--3" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e3932395c1109c05de0e8_lediotelutem.jpg" loading="lazy" alt="" class="c-sticker is--4" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e39fa752e42d180369b2f_thecity.jpg" loading="lazy" alt="" class="c-sticker is--5" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/628e3af71323ed12ac2feacc_ujepagaz.jpg" loading="lazy" alt="" class="c-sticker is--6" />
+                            <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62c8106611a2de285dc8e011_To%20The%20Lake.jpg" loading="lazy" alt="" class="c-sticker is--7" />
+                        </div>
+                    </div>
+                    <div class="c-speakers">
+                        <div class="c-speaker-large">
+                            <div class="c-speaker_contain">
+                                <div
+                                    data-poster-url="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-poster-00001.jpg"
+                                    data-video-urls="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-transcode.mp4,https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-transcode.webm"
+                                    data-autoplay="true"
+                                    data-loop="true"
+                                    data-wf-ignore="true"
+                                    class="c-speaker_vid w-background-video w-background-video-atom"
+                                >
+                                    <video
+                                        id="660bac91-7b44-e633-048d-52fee5395289-video"
+                                        autoplay=""
+                                        loop=""
+                                        style="background-image: url('https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-poster-00001.jpg');"
+                                        muted=""
+                                        playsinline=""
+                                        data-wf-ignore="true"
+                                        data-object-fit="cover"
+                                    >
+                                        <source src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-transcode.mp4" data-wf-ignore="true" />
+                                        <source src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62977f1759741cf08b8cfb50_Sequence 01-transcode.webm" data-wf-ignore="true" />
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="c-speaker_overlay">
+                                <a data-w-id="36da306a-7540-4f56-009f-d610077109f9" href="#" class="c-speaker_dots w-inline-block">
+                                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" />
+                                </a>
+                                <a href="#" class="c-speaker_dots is--4 w-inline-block">
+                                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" />
+                                </a>
+                                <a href="#" class="c-speaker_dots is--3 w-inline-block">
+                                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" />
+                                </a>
+                                <a href="#" class="c-speaker_dots is--2 w-inline-block">
+                                    <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" />
+                                </a>
+                                <div data-w-id="986fbb24-20ea-d393-7215-4f5c7d0b9d47" class="c-random-class"></div>
+                                <img
+                                    src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297798d3064e0571d41bedc_speaker-large-red.svg"
+                                    loading="lazy"
+                                    style="
+                                        -webkit-transform: translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                        -moz-transform: translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                        -ms-transform: translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                        transform: translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                    "
+                                    alt=""
+                                    class="c-speaker_large"
+                                />
+                            </div>
+                        </div>
+                        <div class="c-other-speakers">
+                            <div class="c-speaker_small">
+                                <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/629f487fafefa87e5548e1dc_speaker-small.svg" loading="lazy" alt="" class="c-speaker_img" />
+                                <div class="c-speaker_dot"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--2"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--3"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--4"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                            </div>
+                            <div class="c-speaker_small is--2nd">
+                                <img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/629f487fafefa87e5548e1dc_speaker-small.svg" loading="lazy" alt="" class="c-speaker_img" />
+                                <div class="c-speaker_dot"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--2"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--3"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                                <div class="c-speaker_dot is--4"><img src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/6297755150c31fa16d5220a9_plus.svg" loading="lazy" alt="" class="c-speaker_dot-img" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-footer_bottom">
+                <div class="c-follow">
+                    <div class="c-follow_top"><h2 class="is--follow">BE A GROUPIE:</h2></div>
+                    <div class="c-follow_bottom">
+                        <img
+                            src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62a0979173f7e037eb730f30_dark-sound.svg"
+                            loading="lazy"
+                            style="
+                                -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            "
+                            alt=""
+                            class="c-follow_img2"
+                        />
+                        <img
+                            src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62a09787cdd18f2dddf3583d_red-sound.svg"
+                            loading="lazy"
+                            style="
+                                -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                                transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            "
+                            alt=""
+                            class="c-follow_img"
+                        />
+                    </div>
+                </div>
+                <div class="c-socials">
+                    <div class="c-social">
+                        <div class="c-button_contain">
+                            <a href="mailto:arlindrexh@gmail.com?subject=I%20want%20you!" class="c-button is--large w-inline-block">
+                                <div class="c-button_circle is--large">
+                                    <div data-w-id="a0f11373-b3df-d9db-4833-93bdf665a258" class="c-button_img is--large">
+                                        <div
+                                            class="c-button_icon email"
+                                            data-w-id="a0f11373-b3df-d9db-4833-93bdf665a259"
+                                            data-animation-type="lottie"
+                                            data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62a0bdc84f49241a610d2b32_lf30_editor_kq6niehm.json"
+                                            data-loop="0"
+                                            data-direction="1"
+                                            data-autoplay="1"
+                                            data-is-ix2-target="0"
+                                            data-renderer="svg"
+                                            data-default-duration="1"
+                                            data-duration="0"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="c-button-text">EMAIL</h4>
+                        </div>
+                    </div>
+                    <div class="c-social is--second">
+                        <div class="c-button_contain">
+                            <a href="https://www.instagram.com/olimpiadarecords/" target="_blank" class="c-button is--large w-inline-block">
+                                <div class="c-button_circle is--large">
+                                    <div class="c-button_img is--large is--yellow">
+                                        <div
+                                            class="c-button_icon"
+                                            data-w-id="52c13a9f-9614-3c9a-25cc-faba78ce4bf0"
+                                            data-animation-type="lottie"
+                                            data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62a0b71d9532664f60ed0c28_ig_logo.json"
+                                            data-loop="0"
+                                            data-direction="1"
+                                            data-autoplay="1"
+                                            data-is-ix2-target="0"
+                                            data-renderer="svg"
+                                            data-default-duration="1.1833333333333333"
+                                            data-duration="0"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="c-button-text">INSTAGRAM</h4>
+                        </div>
+                    </div>
+                    <div class="c-social is--third">
+                        <div class="c-button_contain">
+                            <a href="https://olimpiadarecords.bandcamp.com/" target="_blank" class="c-button is--large w-inline-block">
+                                <div class="c-button_circle is--large">
+                                    <div class="c-button_img is--large is--blue">
+                                        <div
+                                            class="c-button_icon"
+                                            data-w-id="4f9068d6-75cd-510a-bc02-ef8af1d18230"
+                                            data-animation-type="lottie"
+                                            data-src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/62a0b7c3225a3b15cd809818_bandcamp.json"
+                                            data-loop="0"
+                                            data-direction="1"
+                                            data-autoplay="1"
+                                            data-is-ix2-target="0"
+                                            data-renderer="canvas"
+                                            data-default-duration="0.9676342615550837"
+                                            data-duration="0.9676342615550837"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="c-button-text">BANDCAMP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=628cb4b46824097fb8527880"
+            type="text/javascript"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://uploads-ssl.webflow.com/628cb4b46824097fb8527880/js/webflow.efceb41c0.js" type="text/javascript"></script>
+        <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script>
+            //Remove Volume Button only for iPad/iPhone and iPod
+            if (navigator.userAgent.match(/(\(iPod|\(iPhone|\(iPad)/)) {
+                $(".c-volume").addClass("remove");
+                $(".c-volume.remove").css("display", "none");
+            }
+
+            // Updates SRC and Album Info
+            function setCurrentSong() {
+                var songUrl = $(".song-item").filter(".current").attr("data-song");
+                var albumArt = $(".song-item").filter(".current").attr("data-img");
+                var albumName = $(".song-item").filter(".current").find("h6").html();
+                var artistName = $(".song-item").filter(".current").find("p").html();
+
+                $("#myAudio").attr("src", songUrl);
+                $(".c-nav_art").attr("src", albumArt);
+                $(".is--song").text(albumName);
+                $(".is--artist").text(artistName);
+            }
+
+            // Runs every second
+            function initProgressBar() {
+                var player = document.getElementById("myAudio");
+                var length = player.duration;
+                var current_time = player.currentTime;
+
+                // calculate total length of value
+                var totalLength = calculateTotalValue(length);
+                document.getElementById("end-time").innerHTML = totalLength;
+
+                // calculate current value time
+                var currentTime = calculateCurrentValue(current_time);
+                document.getElementById("start-time").innerHTML = currentTime;
+
+                var progressbar = document.getElementById("seek-obj");
+                progressbar.value = player.duration ? player.currentTime / player.duration : 0;
+                progressbar.addEventListener("click", seek);
+
+                if (player.currentTime == player.duration) {
+                    if ($("#song-list").children().filter(".current").next().length > 0) {
+                        $("#song-list").children().filter(".current").removeClass("current").next().addClass("current");
+                        setCurrentSong();
+                        player.play();
+                    } else {
+                        $("#song-list").children().removeClass("current");
+                        $("#song-list").children().first().addClass("current");
+                        setCurrentSong();
+                        player.play();
+                    }
+                }
+
+                function seek(event) {
+                    var percent = event.offsetX / this.offsetWidth;
+                    player.currentTime = percent * player.duration;
+                    progressbar.value = percent / 100;
+                }
+            }
+
+            function initPlayers(num) {
+                // pass num in if there are multiple audio players e.g 'player' + i
+
+                for (var i = 0; i < num; i++) {
+                    (function () {
+                        // Variables
+                        // ----------------------------------------------------------
+                        // audio embed object
+                        var playerContainer = document.getElementById("player-container"),
+                            player = document.getElementById("myAudio"),
+                            isPlaying = false,
+                            playBtn = document.getElementById("play-btn");
+
+                        // Controls Listeners
+                        // ----------------------------------------------------------
+                        if (playBtn != null) {
+                            playBtn.addEventListener("click", function () {
+                                togglePlay();
+                            });
+                        }
+
+                        // Controls & Sounds Methods
+                        // ----------------------------------------------------------
+                        function togglePlay() {
+                            if (player.paused === false) {
+                                player.pause();
+                                isPlaying = false;
+                                document.getElementById("play-btn").className = "";
+                            } else {
+                                player.play();
+                                document.getElementById("play-btn").className = "pause";
+                                isPlaying = true;
+                            }
+                        }
+                    })();
+                }
+            }
+
+            function calculateTotalValue(length) {
+                if (isNaN(length)) {
+                    return "00:00";
+                }
+                var minutes = Math.floor(length / 60),
+                    seconds_int = Math.round(length - minutes * 60),
+                    seconds_str = seconds_int.toString(),
+                    seconds = seconds_str.substr(0, 2),
+                    time = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+                return time;
+            }
+
+            function calculateCurrentValue(currentTime) {
+                var current_hour = parseInt(currentTime / 3600) % 24,
+                    current_minute = parseInt(currentTime / 60) % 60,
+                    current_seconds_long = currentTime % 60,
+                    current_seconds = current_seconds_long.toFixed(),
+                    current_time = (current_minute < 10 ? "0" + current_minute : current_minute) + ":" + (current_seconds < 10 ? "0" + current_seconds : current_seconds);
+
+                return current_time;
+            }
+
+            initPlayers(jQuery("#player-container").length);
+        </script>
+        <script>
+            // Tim's Javascript
+
+            // When document is ready
+
+            $(function () {
+                // Disables next / prev / shuffle when power off
+
+                $(".c-power").on("click", function () {
+                    $(".c-controls").toggleClass("no-click");
+                });
+
+                // Goes to previous song unless there are no songs left
+
+                $("#prev").on("click", function () {
+                    if ($("#song-list").children().filter(".current").prev().length > 0) {
+                        $("#song-list").children().filter(".current").removeClass("current").prev().addClass("current");
+                        $("#myAudio")[0].autoplay = true;
+                    } else {
+                        $("#myAudio")[0].autoplay = true;
+                    }
+                });
+
+                // Goes to next song unless there are no songs left
+
+                $("#next").on("click", function () {
+                    if ($("#song-list").children().filter(".current").next().length > 0) {
+                        $("#song-list").children().filter(".current").removeClass("current").next().addClass("current");
+                        $("#myAudio")[0].autoplay = true;
+                    } else {
+                        $("#myAudio")[0].autoplay = true;
+                    }
+                });
+
+                // Selects a random song in the list and gives it the current class
+                $("#shuffle").on("click", function () {
+                    var paras = $("#song-list div");
+                    var rand = Math.floor(Math.random() * paras.length);
+                    $("#song-list").children().filter(".current").removeClass("current");
+                    $(".song-item").eq(rand).addClass("current");
+                    $("#myAudio")[0].autoplay = true;
+                });
+
+                // Call above funciton to update album art and info on controls click
+                $("#next, #prev, #shuffle").on("click", function () {
+                    setCurrentSong();
+                });
+
+                // Changes volume on input change
+                var myVolume = document.getElementById("myAudio");
+                var changeVol = 0.8;
+                myVolume.volume = changeVol;
+                const input = document.querySelector("input");
+
+                input.addEventListener("input", updateValue);
+
+                function updateValue(e) {
+                    changeVol = e.target.value / 100;
+                    myVolume.volume = changeVol;
+                }
+
+                // Play sound on mouse down
+
+                var mouseDown = document.getElementById("mouse-down");
+
+                $(".c-button, .c-speaker_dots").mousedown(function () {
+                    mouseDown.play();
+                    mouseDown.volume = 0.2;
+                });
+
+                // Play sound on mouse up
+
+                var mouseUp = document.getElementById("mouse-up");
+
+                $(".c-button, .c-speaker_dots").mouseup(function () {
+                    mouseUp.play();
+                    mouseUp.volume = 0.1;
+                });
+            });
+
+            let stickerCount = 0;
+            $(".c-speaker_dots").on("click", function () {
+                $(this).off("click");
+                stickerCount++;
+                //Check if all stickers have been clicked
+                if (stickerCount == 4) {
+                    $(".c-random-class").click();
+                }
+            });
+
+            // Draggable script
+
+            $(".c-sticker").draggable();
+
+            // Z-index script
+
+            var count = 10;
+            $(".c-sticker").mousedown(function () {
+                $(this).css("z-index", count++);
+            });
+
+            // disable hitting enter
+            $(window).keydown(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        </script>
+    </body>
+</html>
